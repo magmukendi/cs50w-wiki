@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{%block title%}
+Search Results
+{%endblock title%}
+
+{%block body %}
+
+{%if result%}
+    {% for re in result %}
+    <p><a href="{%url 'detail' pk=re%}">{{re}}</a></p>
+    {% endfor%}
+{%else%}
+<h3> No result found</h3>
+<P>Would like to create a new page?</p>
+{% endif %}
+{%endblock body%}

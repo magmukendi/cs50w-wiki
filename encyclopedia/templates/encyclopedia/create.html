@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+{%block body%}
+<form action="" method="post" style = " width: 80%; ">
+    {% csrf_token%}
+    <div style="margin:auto; display:flex; flex-direction:column; flex-warp:warp; align-items: center;">
+        <h1 style=" text-align:center; margin-bottom:20px">Write you wiki Here!</h1>
+        <input style= "width: 90%; margin-bottom: 25px; text-align:center; padding-top" id="title" name="title" placeholder="Title here">
+        <textarea style= "width: 90%; height:300px; margin-bottom: 25px; text-align:center; padding-top" id="content" name="content"placeholder="Content here"></textarea>
+        <input type="submit" style="margin:auto; width: 80%;" name="submit" value="submit"/>
+    </div>
+</form>
+{%endblock body%}
