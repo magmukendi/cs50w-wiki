@@ -42,9 +42,13 @@ def layout(request):
 def entries(request, pk):
     txt =random.choice(util.list_entries())    
     el = Markdown()
-    e = el.convert(util.get_entry(pk))
-    context = {"title":pk, "entry":e, "random":txt }
-    return render(request, "encyclopedia/entry.html", context)
+    try:
+        e = el.convert(util.get_entry(pk))
+        context = {"title":pk, "entry":e, "random":txt }
+        return render(request, "encyclopedia/entry.html", context)
+    except TypeError:
+        print("This page does not exist")
+        return render(request, 'encyclopedia/notfound.html', {'random':txt})
 
 
 def create(request):
