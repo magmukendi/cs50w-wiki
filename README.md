@@ -15,4 +15,4 @@ A Wikipedia-like online encyclopedia built with HTML, CSS, and Django as one of 
 
 
 
-There is a walkthrough video to help better understand the project.[Click here](https://www.youtube.com/watch?v=_uAzlZyqeSo) to see it.
+There is a walkthrough video to help better understand the project. [Click here](https://www.youtube.com/watch?v=_uAzlZyqeSo) to see it.
