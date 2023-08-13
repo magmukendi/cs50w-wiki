@@ -1,4 +1,4 @@
-# cs50w-wiki
+# Wikipedia-like online encyclopedia
 A Wikipedia-like online encyclopedia built with HTML, CSS, and Django as one of the project from [cs50's Web Programming with Python and Javascript](https://cs50.harvard.edu/web/2020/). 
 
 [Wikipedia](https://www.wikipedia.org/) is a free online encyclipedia that consists of a numberof encyclopedia entries on various topics.
@@ -14,5 +14,15 @@ A Wikipedia-like online encyclopedia built with HTML, CSS, and Django as one of 
   - **Markdown to HTML Conversion**:  On each entry's page, any markdown content is be converted to HTML before being displayed to the user.
 
 
-
 There is a walkthrough video to help better understand the project. [Click here](https://www.youtube.com/watch?v=_uAzlZyqeSo) to see it.
+
+## How to test the project ?
+
+Given that the project is not hosted online, it can only be tested locally. 
+
+In order to test the project locally, follow the instruction below:
+
+1. Clone the repository locally
+   By doing `git clone https://github.com/magmukendi/cs50w-wiki.git`
+2. Run the project locally
+   Before running the project locally, make sure that python and django are install. If they are already installed, run `python manage.py runserver` and you should be able to test the functionality mentionned above.
